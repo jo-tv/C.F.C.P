@@ -58,15 +58,15 @@ document.querySelector("form").addEventListener("submit", function (e) {
     const time = document.getElementById("appointmentTime").value.trim();
 
     const fullMessage =
-        `طلب حجز موعد:%0A` +
-        `الاسم الكامل: ${name}%0A` +
-        `رقم الهاتف: ${phone}%0A` +
-        `نوع الدورة / البطاقة: ${courseType}%0A` +
-        `تاريخ الموعد: ${date}%0A` +
-        `الوقت المفضل: ${time || 'غير محدد'}`;
+        `*طلب حجز موعد جديد*%0A%0A` +
+        `👤 *الاسم الكامل:* ${name}%0A` +
+        `📞 *رقم الهاتف:* ${phone}%0A` +
+        `🎓 *نوع الدورة / البطاقة:* ${courseType}%0A` +
+        `📅 *تاريخ الموعد:* ${date}%0A` +
+        `⏰ *الوقت المفضل:* ${time || "غير محدد"}%0A%0A` +
+        `تم الإرسال عبر الموقع الرسمي.`;
 
-    const phoneNumber = "+212601862102"; // رقم الواتساب مع رمز الدولة
-
+    const phoneNumber = "212601862102"; // بدون +
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
     window.open(whatsappURL, "_blank");
 });

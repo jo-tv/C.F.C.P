@@ -353,3 +353,67 @@
 .copyright a:hover {
     color: var(--light);
 }
+/* css style maps */
+#titleMaps {
+    position: relative;
+    top: -150px;
+}
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    border: 3px solid #2c3e50;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#map {
+    height: 80vh;
+    width: 100%;
+}
+
+.leaflet-popup-content {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: right;
+    transition: 1s;
+}
+
+.popup-title {
+    font-weight: 900;
+    font-size: 17px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow:
+        1px 0px 1px #cccccc,
+        0px 1px 1px #eeeeee,
+        2px 1px 1px #cccccc,
+        1px 2px 1px #eeeeee,
+        3px 2px 1px #cccccc,
+        2px 3px 1px #eeeeee,
+        4px 3px 1px #cccccc,
+        3px 4px 1px #eeeeee,
+        5px 4px 1px #cccccc,
+        4px 5px 1px #eeeeee,
+        6px 5px 1px #cccccc,
+        5px 6px 1px #eeeeee,
+        7px 6px 1px #cccccc;
+}
+.leaflet-popup-content:hover {
+    scale: 1.1;
+}
+
+.popup-info {
+    margin-bottom: 15px;
+}
+.alert-info {
+    margin-top: 50px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+/* css style maps */
+
