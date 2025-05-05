@@ -416,4 +416,27 @@
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 /* css style maps */
+.titelVedio {
+    font-size: 27px;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--primary);
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 76.25%; /* نسبة العرض إلى الارتفاع 16:9 */
+    height: 0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
 
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
