@@ -112,7 +112,7 @@
                 href="index.html"
                 class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
             >
-                <h2 class="m-0"><img id="img" src="img/logo.png" />C.F.C.P</h2>
+                <h2 class="m-0"><img id="img" src="img/logo.png" /> C.F.C.P</h2>
             </a>
             <button
                 type="button"
@@ -122,46 +122,57 @@
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="courses.html" class="nav-item nav-link">Courses</a>
+            <div class="collapse navbar-collapse" id="navbarCollapse" dir="rtl">
+                <div class="navbar-nav ms-auto p-4 p-lg-0 text-end">
+                    <a href="index.html" class="nav-item nav-link active"
+                        ><i class="fa fa-home ms-2"></i>الرئيسية</a
+                    >
+                    <a href="about.html" class="nav-item nav-link"
+                        ><i class="fa fa-info-circle ms-2"></i>من نحن</a
+                    >
+                    <a href="courses.html" class="nav-item nav-link"
+                        ><i class="fa fa-book ms-2"></i>الدورات</a
+                    >
                     <a href="appointment.html" class="nav-item nav-link"
-                        >Groupe Cols Blancs</a
+                        ><i class="fa fa-building ms-2"></i>مجموعة الياقات
+                        البيضاء</a
                     >
                     <div class="nav-item dropdown">
                         <a
                             href="#"
-                            class="nav-link dropdown-toggle active"
+                            class="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown"
-                            >Pages</a
                         >
-                        <div class="dropdown-menu bg-light m-0">
+                            <i class="fa fa-folder-open ms-2"></i>صفحات
+                        </a>
+                        <div class="dropdown-menu bg-light m-0 text-end">
                             <a href="feature.html" class="dropdown-item"
-                                >Features</a
-                            >
-                            <a href="appointment.html" class="dropdown-item"
-                                >Appointment</a
+                                ><i class="fa fa-check-circle ms-2"></i
+                                >المميزات</a
                             >
                             <a href="team.html" class="dropdown-item"
-                                >Our Team</a
+                                ><i class="fa fa-users ms-2"></i>فريق العمل</a
+                            >
+                            <a href="Album.html" class="dropdown-item"
+                                ><i class="fa fa-images ms-2"></i> أجمل لحظاتنا
+                                بعدسة الصور</a
                             >
                             <a href="testimonial.html" class="dropdown-item"
-                                >Testimonial</a
-                            >
-                            <a href="404.html" class="dropdown-item active"
-                                >404 Page</a
+                                ><i class="fa fa-comments ms-2"></i>آراء
+                                العملاء</a
                             >
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link"
+                        ><i class="fa fa-phone ms-2"></i>اتصل بنا</a
+                    >
                 </div>
                 <a
-                    href=""
+                    href="#"
                     class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
-                    >Get Started<i class="fa fa-arrow-right ms-3"></i
-                ></a>
+                >
+                    <i class="fa fa-arrow-left me-2"></i>ابدأ الآن
+                </a>
             </div>
         </nav>
         <!-- Navbar End -->
