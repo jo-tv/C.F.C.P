@@ -66,7 +66,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
         `⏰ *الوقت المفضل:* ${time || "غير محدد"}%0A%0A` +
         `تم الإرسال عبر الموقع الرسمي.`;
 
-    const phoneNumber = "212601862102"; // بدون +
+    const phoneNumber = "212610-545333"; // بدون +
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
     window.open(whatsappURL, "_blank");
 });
