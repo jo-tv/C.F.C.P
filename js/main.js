@@ -71,8 +71,3 @@ document.querySelector("form").addEventListener("submit", function (e) {
     window.open(whatsappURL, "_blank");
 });
 //---fin---- code programme send msg form to WhatsApp -------
-
-  if (location.pathname.endsWith('.html')) {
-    const cleanPath = location.pathname.replace('.html', '');
-    window.history.replaceState({}, '', cleanPath);
-  }
