@@ -13,7 +13,31 @@
             content="مجموعة الياقات البيضاء لتكوين السائقين المهنيين تقدم دورات نظرية وتطبيقية متطورة، مع فروع منتشرة في مختلف مدن المملكة. الجودة، الاحترافية، والنجاح في متناولك."
         />
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon" />
+        <meta name="site_name" content="Cols Blancs" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="img/favicon.png"
+            sizes="512x512" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon.png" />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Cols Blancs",
+                "url": "https://colsblancs.com"
+            }
+        </script>
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -587,6 +611,44 @@
             </div>
         </div>
         <!-- Copyright End -->
+        
+         <!-- button change lang -->
+        <a
+            href="propos.html"
+            id="langToggle"
+            class="btn btn-light position-fixed shadow"
+            style="
+                background: #f3bd00;
+                height: 70px;
+                border-radius: 50%;
+                bottom: 22px;
+                right: 18px;
+                z-index: 9999;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            ">
+            <img
+                src="https://flagcdn.com/w40/fr.png"
+                alt="FR"
+                style="width: 24px; height: 16px" />
+            FR
+        </a>
+
+        <script>
+            const langToggle =
+                document.getElementById("langToggle");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 500) {
+                    langToggle.style.display = "none";
+                } else {
+                    langToggle.style.display = "flex";
+                }
+            });
+        </script>
+        <!-- fin button change lang -->
+
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
