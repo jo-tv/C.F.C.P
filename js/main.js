@@ -71,3 +71,10 @@ document.querySelector("form").addEventListener("submit", function (e) {
     window.open(whatsappURL, "_blank");
 });
 //---fin---- code programme send msg form to WhatsApp -------
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((reg) => console.log("Service Worker Registered", reg))
+      .catch((err) => console.error("Service Worker Error", err));
+  }
