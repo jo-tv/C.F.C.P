@@ -72,9 +72,16 @@ document.querySelector("form").addEventListener("submit", function (e) {
 });
 //---fin---- code programme send msg form to WhatsApp -------
 
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-      .register("/service-worker.js")
-      .then((reg) => console.log("Service Worker Registered", reg))
-      .catch((err) => console.error("Service Worker Error", err));
-  }
+// تسجيل الـ Service Worker
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+            .register("/sw.js") // تأكد أن اسم الملف صحيح
+            .then(registration => {
+                console.log("Service Worker مسجّل بنجاح:", registration.scope);
+            })
+            .catch(error => {
+                console.error("فشل تسجيل Service Worker:", error);
+            });
+    });
+}

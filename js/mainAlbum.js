@@ -33,3 +33,17 @@ Swaying photo gallery - hover event @wakana-k - https://codepen.io/wakana-k/pen/
 		animStart();
 	};
 })();
+
+// تسجيل الـ Service Worker
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+            .register("/sw.js") // تأكد أن اسم الملف صحيح
+            .then(registration => {
+                console.log("Service Worker مسجّل بنجاح:", registration.scope);
+            })
+            .catch(error => {
+                console.error("فشل تسجيل Service Worker:", error);
+            });
+    });
+}
