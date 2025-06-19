@@ -85,3 +85,18 @@ if ("serviceWorker" in navigator) {
             });
     });
 }
+
+
+if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+    // المتصفح يطلب إذن يدويًا (مثل Safari)
+    DeviceOrientationEvent.requestPermission()
+        .then(response => {
+            if (response === 'granted') {
+                window.addEventListener('deviceorientation', handleOrientation);
+            }
+        })
+        .catch(console.error);
+} else {
+    // متصفحات أخرى (مثل Chrome/Firefox)
+    window.addEventListener('deviceorientation', handleOrientation);
+}
